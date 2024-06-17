@@ -10,8 +10,8 @@ This repository contains examples of implementing tests using Jest and Vitest fo
 
 ## Technologies Used
 
-- Jest: A JavaScript testing framework for unit tests.
-- Vitest: A fast and powerful testing framework for JavaScript and TypeScript projects.
-- Supertest: A library for testing HTTP servers using a fluent API.
+- `jest`: A JavaScript testing framework for unit tests.
+- `vitest`: A fast and powerful testing framework for JavaScript and TypeScript projects.
+- `supertest`: A library for testing HTTP servers using a fluent API.
 - `vitest-mock-extended`: A library for mocking TypeScript types with Vitest.
-- Express: A web application framework for Node.js used in the simple http server.
+- `express`: A web application framework for Node.js used in the simple http server.
