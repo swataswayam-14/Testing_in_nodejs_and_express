@@ -1,5 +1,5 @@
 import { sum, mul } from "..";
-import {describe , expect , it, test} from "@jest/globals"
+import {describe , expect , it} from "@jest/globals"
 
 describe('testing the sum function', () => {
     it('should return the sum of 1 and 3 correctly', () => {
