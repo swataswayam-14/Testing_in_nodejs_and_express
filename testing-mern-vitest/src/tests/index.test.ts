@@ -1,11 +1,13 @@
 import request from "supertest";
 import {describe , expect , it, vi} from "vitest"
 import { app } from "..";
+import { admin } from "../users/admin";
 
 // vi.mock('../db', () => ({
 //     prismaClient: {sum: { create: vi.fn() }}
 // }))
 vi.mock('../db');
+vi.mock('../users/admin');
 
 describe('POST/ sum', () => {
   it("should return the sum of two numbers", async () => {
@@ -82,4 +84,10 @@ describe("GET/ sum", () => {
         expect(res.statusCode).toBe(411);
         expect(res.body.message).toBe("incorrect inputs");
     })
+})
+
+describe("testing mock admin function", () => {
+    it("the test should pass without any error",() =>{
+        console.log(admin()); //undefined if mock is present , if we add the mock then it will return the actual string
+    });
 })
